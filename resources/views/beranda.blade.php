@@ -120,4 +120,123 @@
   }
 </script>
 
+<!-- Tombol Pendaftaran -->
+<section class="bg-white py-10 px-4 shadow-inner">
+    <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Siap Jadi Pahlawan?</h2>
+        <p class="text-gray-600 mb-6">Klik tombol di bawah ini untuk mulai mendaftar sebagai pendonor darah.</p>
+
+        <a href="/daftar" class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition inline-block">
+            Daftar Sebagai Pendonor
+        </a>
+    </div>
+</section>
+
+<!-- Daftar Pendonor -->
+<section class="bg-white py-10 px-4 shadow-inner mt-8">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Daftar Pendonor</h2>
+
+        <div class="bg-white rounded shadow p-4 text-left mt-6">
+            <ul class="divide-y divide-gray-200">
+                <li class="py-2 flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-800 font-semibold">Ayu Ramadhani</p>
+                        <p class="text-gray-500 text-sm">Golongan Darah: A+</p>
+                    </div>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
+                        Lihat Detail
+                    </button>
+                </li>
+                <li class="py-2 flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-800 font-semibold">Budi Santoso</p>
+                        <p class="text-gray-500 text-sm">Golongan Darah: O+</p>
+                    </div>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
+                        Lihat Detail
+                    </button>
+                </li>
+                <li class="py-2 flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-800 font-semibold">Citra Amelia</p>
+                        <p class="text-gray-500 text-sm">Golongan Darah: B+</p>
+                    </div>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
+                        Lihat Detail
+                    </button>
+                </li>
+                <li class="py-2 flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-800 font-semibold">Rizky Maulana</p>
+                        <p class="text-gray-500 text-sm">Golongan Darah: AB+</p>
+                    </div>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
+                        Lihat Detail
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Toggle Script -->
+<script>
+    document.getElementById('toggleFormBtn').addEventListener('click', function () {
+        document.getElementById('pendonorForm').classList.toggle('hidden');
+    });
+</script>
+
+ <!-- Tentang Kami -->
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-700 mb-4">Tentang Kami</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                RedConnect adalah platform digital yang didedikasikan untuk memudahkan proses donor darah dan meningkatkan kesadaran masyarakat
+                akan pentingnya donor darah. Kami bekerja sama dengan PMI dan relawan untuk menyediakan informasi, jadwal, dan lokasi donor darah.
+            </p>
+            <p class="mt-4 text-gray-700 text-lg">
+                Bersama RedConnect, jadilah bagian dari gerakan kebaikan yang nyata. Karena setetes darahmu sangat berarti bagi yang membutuhkan.
+            </p>
+        </div>
+    </section>
+
+<!-- Lokasi Donor -->
+<section class="bg-red-50 py-12 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        
+        <!-- Daftar Lokasi -->
+        <div>
+            <h2 class="text-2xl font-bold text-red-700 mb-4">Lokasi Donor Darah di Pontianak</h2>
+            <ul class="space-y-4 text-gray-700">
+                <li>
+                    <strong>PMI Kota Pontianak</strong><br>
+                    Jl. Gusti Sulung Lelanang No.25, Kota Pontianak, Kalimantan Barat 78121<br>
+                    Telp: (0561) 734991
+                </li>
+                <li>
+                    <strong>PMI Provinsi Kalimantan Barat</strong><br>
+                    Jl. Ahmad Yani No.12, Pontianak Selatan, Pontianak<br>
+                    Telp: (0561) 736402
+                </li>
+            </ul>
+        </div>
+
+        <!-- Peta Google Maps -->
+        <div class="w-full h-80 rounded-lg shadow overflow-hidden">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7720758027684!2d109.335148!3d-0.026635899999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d596cf0e2ab7f%3A0x7f23652b3ddc6b1c!2sPalang%20Merah%20Indonesia%20(PMI)%20Kota%20Pontianak!5e0!3m2!1sen!2sid!4v1716646482557!5m2!1sen!2sid" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
 @endsection

@@ -4,9 +4,9 @@
 
         <!-- Navigasi Desktop -->
         <nav class="space-x-6 hidden md:flex items-center">
-            <a href="/form" class="hover:underline">Form Donor</a>
-            <a href="/edukasi" class="hover:underline">Edukasi</a>
-            <a href="/kontak" class="hover:underline">Kontak</a>
+            <a href="{{ route('beranda') }}" class="hover:underline">Beranda</a>
+            <a href="/Tentang Kami" class="hover:underline">Tentang Kami</a>
+            <a href="/Kebijakan" class="hover:underline">Kebijakan</a>
 
             <!-- Ikon Profil -->
             <a href="/profil" class="ml-2 hover:text-gray-200" aria-label="Profil">
@@ -28,9 +28,9 @@
 
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2">
-        <a href="/form" class="block py-2">Form Donor</a>
-        <a href="/edukasi" class="block py-2">Edukasi</a>
-        <a href="/kontak" class="block py-2">Kontak</a>
+        <a href="{{ route('beranda') }}" class="block py-2">Beranda</a>
+        <a href="/tentang kami" class="block py-2">Tentang Kami</a>
+        <a href="/kebijakan" class="block py-2">Kebijakan</a>
         <a href="/profil" class="block py-2">Profil</a>
     </div>
 </header>
