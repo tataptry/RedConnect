@@ -1,4 +1,4 @@
-@extends('uts.app')
+@extends('layouts.app')
 
 @section('title', 'Beranda - RedConnect')
 
