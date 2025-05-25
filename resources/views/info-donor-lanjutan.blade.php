@@ -24,7 +24,7 @@
 
   <!-- Manfaat Donor Darah -->
   <div class="w-full max-w-4xl bg-white shadow-md rounded-xl border-l-4 border-red-600 p-6 space-y-4">
-    <h2 class="text-2xl font-bold text-red-600"> Manfaat Donor Darah</h2>
+    <h2 class="text-2xl font-bold text-red-600">Manfaat Donor Darah</h2>
     <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-2">
       <li>
         <strong>Mengurangi Kadar Kolesterol:</strong> Menurunkan kadar LDL & trigliserida, mengurangi risiko aterosklerosis.
@@ -46,7 +46,7 @@
 
   <!-- Tombol Kembali -->
   <div class="w-full max-w-4xl text-left">
-    <a href="{{ route('info') }}" class="text-sm text-red-600 hover:underline">
+    <a href="{{ route('beranda') }}" class="text-sm text-red-600 hover:underline">
       ← Kembali ke halaman sebelumnya
     </a>
   </div>

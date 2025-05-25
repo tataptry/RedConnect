@@ -20,8 +20,12 @@ Route::get('/jadwal-donor', function () {
 
 // Halaman Info Donor
 Route::get('/info-donor', function () {
-    return view('info');
+    return view('info-donor-lanjutan');
 })->name('info');
+
+Route::get('/info-donor-lanjutan', function () {
+    return view('info-donor-lanjutan');
+})->name('info.donor.lanjutan');
 
 /// Halaman Tentang Kami
 Route::get('/tentang-kami', function () {
@@ -39,6 +43,4 @@ Route::get('/daftar', function () {
     return view('daftar');
 });
 // Menyimpan Data Pendaftar (contoh)
-Route::post('/daftar', [PendonorController::class, 'store'])->name('pendonor.store');
-Route::get('/profil/{id}', [PendonorController::class, 'show'])->name('pendonor.show');
-Route::post('/pendonor/daftar', [PendonorController::class, 'store'])->name('pendonor.daftar');
+
