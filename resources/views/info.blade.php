@@ -12,9 +12,7 @@
     <h2 class="text-2xl font-bold text-red-600 mb-4">Info Donor</h2>
     <p class="text-gray-700 mb-4 text-lg leading-relaxed">
      Apa itu Donor Darah? 
-
-Donor darah adalah kegiatan mendonorkan atau menyumbangkan darah secara sukarela. Donor ini dilakukan untuk memenuhi kebutuhan orang-orang yang memerlukan tambahan darah, seperti penderita trauma berat yang kehilangan banyak darah, anemia, talasemia, hemofilia, hingga leukemia. 
-
+Donor darah adalah kegiatan mendonorkan atau menyumbangkan darah secara sukarela. Donor ini dilakukan untuk memenuhi kebutuhan orang-orang yang memerlukan tambahan darah, seperti penderita trauma berat yang kehilangan banyak darah, anemia, talasemia, hemofilia, hingga leukemia.
 Tujuan donor darah adalah untuk kepentingan sosial dan kemanusiaan. Prosedur ini berada di bawah pengawasan Palang Merah Indonesia (PMI) dan telah dijamin keamanannya dalam UU No. 36 Tahun 2009 tentang Kesehatan.
     </p>
     <p class="text-gray-700 text-lg leading-relaxed">
