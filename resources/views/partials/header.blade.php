@@ -1,4 +1,4 @@
-<header class="bg-red-600 text-white shadow-md">
+<header class="bg-red-600 text-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 class="text-xl font-bold">RedConnect</h1>
 
