@@ -34,7 +34,7 @@
                         Donor darah dapat membantu menyelamatkan nyawa hingga tiga orang. Prosesnya cepat, aman, dan bermanfaat tidak hanya bagi penerima tetapi juga pendonor.
                     </p>
                 </div>
-                <a href="/info-donor"
+                <a href="{{ route('info') }}"
                    class="inline-block mt-auto bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
                     Seterusnya →
                 </a>
