@@ -33,6 +33,11 @@ Route::get('/Kebijakan', function () {
     return view('policy'); 
 });
 
+//Halaman lanjutan info donor
+Route::get('/info-donor-lanjutan', function () {
+    return view('info-donor-lanjutan');
+})->name('info.donor.lanjutan');
+
 // Halaman Pendaftaran
 Route::get('/daftar', function () {
     return view('daftar');

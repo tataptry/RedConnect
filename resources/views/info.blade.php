@@ -20,9 +20,9 @@ Tujuan donor darah adalah untuk kepentingan sosial dan kemanusiaan. Prosedur ini
       Bersama RedConnect, mari wujudkan gerakan donor darah yang lebih teratur dan terorganisir.
     </p>
   </div>
-  <a href="/info-donor" class="inline-block mt-6 bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
-    Seterusnya →
-  </a>
+  <a href="{{ route('info.donor.lanjutan') }}" class="inline-block mt-6 bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
+  Seterusnya →
+</a>
 </div>
 
 <!-- Kotak Terpisah: Daftar Pendonor -->
