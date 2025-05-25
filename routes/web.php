@@ -7,15 +7,33 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('/', function () {
-    return view('home');
+    return view('beranda');
+})->name('beranda');
+
+//Halaman Jadwal Donor
+Route::get('/jadwal-donor', function () {
+    return view('jadwal');
+})->name('jadwal');
+
+// Halaman Info Donor
+Route::get('/info-donor', function () {
+    return view('info');
+})->name('info');
+
+/// Halaman Tentang Kami
+Route::get('/tentang-kami', function () {
+    return view('about');
 });
-Route::get('/kontak', function () {
-    return view('kontak');
+
+//Halaman Kebijakan
+Route::get('/kebijakan', function () {
+    return view('policy'); 
 });
-Route::get('/form', function () {
-    return view('form');
+
+// Halaman Pendaftaran
+Route::get('/daftar', function () {
+    return view('daftar');
 });
-Route::post('/form-submit', function (Request $request) {
-    // Validasi & simpan (saat ini hanya contoh)
-    return back()->with('success', 'Form berhasil dikirim!');
-})->name('form.submit');
+// Menyimpan Data Pendaftar (contoh)
+Route::post('/daftar', [PendonorController::class, 'store'])->name('pendonor.store');
+Route::get('/profil/{id}', [PendonorController::class, 'show'])->name('pendonor.show');

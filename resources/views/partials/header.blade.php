@@ -30,7 +30,7 @@
     <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2">
         <a href="{{ route('beranda') }}" class="block py-2">Beranda</a>
         <a href="/tentang kami" class="block py-2">Tentang Kami</a>
-        <a href="/kebijakan" class="block py-2">Kebijakan</a>
+        <a href="/Kebijakan" class="block py-2">Kebijakan</a>
         <a href="/profil" class="block py-2">Profil</a>
     </div>
 </header>
