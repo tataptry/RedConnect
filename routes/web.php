@@ -26,9 +26,14 @@ Route::get('/tentang-kami', function () {
 });
 
 //Halaman Kebijakan
-Route::get('/kebijakan', function () {
+Route::get('/Kebijakan', function () {
     return view('policy'); 
 });
+
+//Halaman lanjutan info donor
+Route::get('/info-donor-lanjutan', function () {
+    return view('info-donor-lanjutan');
+})->name('info.donor.lanjutan');
 
 // Halaman Pendaftaran
 Route::get('/daftar', function () {

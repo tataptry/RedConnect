@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Info Donor -->
-<div>
+<div class="py-6 px-8">
       <h1 class="text-3xl font-bold text-red-700 text-center">Jadilah Pahlawan, Cukup dengan Donor Darah</h1>
 </div>
 <div class="bg-white shadow-md rounded-xl p-6 border-l-4 border-red-600 flex flex-col justify-between">
@@ -20,9 +20,9 @@ Tujuan donor darah adalah untuk kepentingan sosial dan kemanusiaan. Prosedur ini
       Bersama RedConnect, mari wujudkan gerakan donor darah yang lebih teratur dan terorganisir.
     </p>
   </div>
-  <a href="/info-donor" class="inline-block mt-6 bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
-    Seterusnya →
-  </a>
+  <a href="{{ route('info.donor.lanjutan') }}" class="inline-block mt-6 bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
+  Seterusnya →
+</a>
 </div>
 
 <!-- Kotak Terpisah: Daftar Pendonor -->
