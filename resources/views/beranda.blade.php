@@ -132,75 +132,12 @@
     </div>
 </section>
 
-<!-- Daftar Pendonor -->
-<section class="bg-white py-10 px-4 shadow-inner mt-8">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Daftar Pendonor</h2>
-
-        <div class="bg-white rounded shadow p-4 text-left mt-6">
-            <ul class="divide-y divide-gray-200">
-                <li class="py-2 flex justify-between items-center">
-                    <div>
-                        <p class="text-gray-800 font-semibold">Ayu Ramadhani</p>
-                        <p class="text-gray-500 text-sm">Golongan Darah: A+</p>
-                    </div>
-                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
-                        Lihat Detail
-                    </button>
-                </li>
-                <li class="py-2 flex justify-between items-center">
-                    <div>
-                        <p class="text-gray-800 font-semibold">Budi Santoso</p>
-                        <p class="text-gray-500 text-sm">Golongan Darah: O+</p>
-                    </div>
-                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
-                        Lihat Detail
-                    </button>
-                </li>
-                <li class="py-2 flex justify-between items-center">
-                    <div>
-                        <p class="text-gray-800 font-semibold">Citra Amelia</p>
-                        <p class="text-gray-500 text-sm">Golongan Darah: B+</p>
-                    </div>
-                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
-                        Lihat Detail
-                    </button>
-                </li>
-                <li class="py-2 flex justify-between items-center">
-                    <div>
-                        <p class="text-gray-800 font-semibold">Rizky Maulana</p>
-                        <p class="text-gray-500 text-sm">Golongan Darah: AB+</p>
-                    </div>
-                    <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 text-xs">
-                        Lihat Detail
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-
 <!-- Toggle Script -->
 <script>
     document.getElementById('toggleFormBtn').addEventListener('click', function () {
         document.getElementById('pendonorForm').classList.toggle('hidden');
     });
 </script>
-
- <!-- Tentang Kami -->
-    <section class="bg-white py-16 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-red-700 mb-4">Tentang Kami</h2>
-            <p class="text-gray-700 text-lg leading-relaxed">
-                RedConnect adalah platform digital yang didedikasikan untuk memudahkan proses donor darah dan meningkatkan kesadaran masyarakat
-                akan pentingnya donor darah. Kami bekerja sama dengan PMI dan relawan untuk menyediakan informasi, jadwal, dan lokasi donor darah.
-            </p>
-            <p class="mt-4 text-gray-700 text-lg">
-                Bersama RedConnect, jadilah bagian dari gerakan kebaikan yang nyata. Karena setetes darahmu sangat berarti bagi yang membutuhkan.
-            </p>
-        </div>
-    </section>
 
 <!-- Lokasi Donor -->
 <section class="bg-red-50 py-12 px-4">

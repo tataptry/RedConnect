@@ -5,7 +5,7 @@
         <!-- Navigasi Desktop -->
         <nav class="space-x-6 hidden md:flex items-center">
             <a href="{{ route('beranda') }}" class="hover:underline">Beranda</a>
-            <a href="/Tentang Kami" class="hover:underline">Tentang Kami</a>
+            <a href="/tentang-kami" class="hover:underline">Tentang Kami</a>
             <a href="/Kebijakan" class="hover:underline">Kebijakan</a>
 
             <!-- Ikon Profil -->
