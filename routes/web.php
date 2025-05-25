@@ -23,6 +23,10 @@ Route::get('/info-donor', function () {
     return view('info');
 })->name('info');
 
+Route::get('/info-donor-lanjutan', function () {
+    return view('info-donor-lanjutan');
+})->name('info.donor.lanjutan');
+
 /// Halaman Tentang Kami
 Route::get('/tentang-kami', function () {
     return view('about');
