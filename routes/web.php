@@ -39,6 +39,6 @@ Route::get('/daftar', function () {
     return view('daftar');
 });
 // Menyimpan Data Pendaftar (contoh)
-Route::get('/profil', [PendonorController::class, 'show'])->name('profil');
 Route::post('/daftar', [PendonorController::class, 'store'])->name('pendonor.store');
 Route::get('/profil/{id}', [PendonorController::class, 'show'])->name('pendonor.show');
+Route::post('/pendonor/daftar', [PendonorController::class, 'store'])->name('pendonor.daftar');

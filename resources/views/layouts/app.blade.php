@@ -17,26 +17,4 @@
     @include('partials.footer')
     
 </body>
-<script>
-    document.getElementById('menuBtn').addEventListener('click', () => {
-        document.getElementById('mobileMenu').classList.toggle('hidden');
-    });
-
-    // Scroll detection
-    let lastScroll = 0;
-    const header = document.getElementById('mainHeader');
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > lastScroll && currentScroll > 60) {
-            header.classList.add('-translate-y-full'); // sembunyikan
-        } else {
-            header.classList.remove('-translate-y-full'); // tampilkan
-        }
-
-        lastScroll = currentScroll;
-    });
-</script>
-
 </html>

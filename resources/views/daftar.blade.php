@@ -10,40 +10,49 @@
 
     <h1 class="text-3xl font-bold mb-6">Form Pendaftaran Pendonor</h1>
 
-    @if(isset($success))
+    @if(session('success'))
         <div class="bg-green-200 text-green-800 p-4 rounded mb-6 max-w-md w-full text-center font-semibold">
-            {{ $success }}
+            {{ session('success') }}
         </div>
     @endif
 
     @if(!isset($pendonor))
         <form method="POST" action="{{ route('pendonor.daftar') }}" class="bg-white p-6 rounded shadow max-w-md w-full space-y-4">
             @csrf
+
             <div>
-                <label>Nama Lengkap</label>
-                <input type="text" name="name" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('name') }}">
-                @error('name')<p class="text-red-600 text-sm mt-1">{{ $message }}</p>@enderror
+                <label for="name" class="block font-medium">Nama Lengkap</label>
+                <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('name') }}">
+                @error('name')
+                    <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
+                @enderror
             </div>
 
             <div>
-                <label>Email</label>
-                <input type="email" name="email" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('email') }}">
-                @error('email')<p class="text-red-600 text-sm mt-1">{{ $message }}</p>@enderror
+                <label for="email" class="block font-medium">Email</label>
+                <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('email') }}">
+                @error('email')
+                    <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
+                @enderror
             </div>
 
             <div>
-                <label>Golongan Darah</label>
-                <input type="text" name="blood_type" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('blood_type') }}">
-                @error('blood_type')<p class="text-red-600 text-sm mt-1">{{ $message }}</p>@enderror
+                <label for="blood_type" class="block font-medium">Golongan Darah</label>
+                <input type="text" id="blood_type" name="blood_type" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('blood_type') }}">
+                @error('blood_type')
+                    <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
+                @enderror
             </div>
 
             <div>
-                <label>Nomor Telepon</label>
-                <input type="text" name="phone" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('phone') }}">
-                @error('phone')<p class="text-red-600 text-sm mt-1">{{ $message }}</p>@enderror
+                <label for="phone" class="block font-medium">Nomor Telepon</label>
+                <input type="text" id="phone" name="phone" class="w-full border border-gray-300 rounded px-3 py-2" value="{{ old('phone') }}">
+                @error('phone')
+                    <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
+                @enderror
             </div>
 
-            <button type="submit" class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800 transition">
+            <button type="submit" class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800 transition w-full">
                 Daftar
             </button>
         </form>
