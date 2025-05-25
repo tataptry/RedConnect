@@ -12,7 +12,6 @@
             <li><span class="font-semibold">Senin - Jumat:</span> 09.00 - 15.00</li>
             <li><span class="font-semibold">Sabtu:</span> 09.00 - 12.00</li>
             <li><span class="font-semibold">Lokasi:</span> Unit Transfusi Darah PMI Kota Terdekat</li>
-            <li><span class="font-semibold">Syarat:</span> Sehat jasmani & rohani, berusia 17-60 tahun, berat badan minimal 45kg</li>
         </ul>
 
         <p class="text-gray-600 mt-6">
