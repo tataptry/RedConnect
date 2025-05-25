@@ -1,7 +1,7 @@
 <header class="bg-red-600 text-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">RedConnect</h1>
-
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"> 
+        <h1 class="text-xl font-bold">RedConnect</h1> 
+ 
         <!-- Navigasi Desktop -->
         <nav class="space-x-6 hidden md:flex items-center">
             <a href="{{ route('beranda') }}" class="hover:underline">Beranda</a>
@@ -36,8 +36,8 @@
 </header>
 
 <script>
-    // Toggle menu mobile
-    document.getElementById('menuBtn').addEventListener('click', () => {
-        document.getElementById('mobileMenu').classList.toggle('hidden');
-    });
+    // Toggle menu mobile 
+    document.getElementById('menuBtn').addEventListener('click', () => { 
+        document.getElementById('mobileMenu').classList.toggle('hidden'); 
+    }); 
 </script>
