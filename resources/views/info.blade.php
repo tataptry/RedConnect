@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Info Donor -->
-<div>
+<div class="py-6 px-8">
       <h1 class="text-3xl font-bold text-red-700 text-center">Jadilah Pahlawan, Cukup dengan Donor Darah</h1>
 </div>
 <div class="bg-white shadow-md rounded-xl p-6 border-l-4 border-red-600 flex flex-col justify-between">
