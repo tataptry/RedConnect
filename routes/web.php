@@ -1,11 +1,14 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PendonorController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
+// Halaman Utama
 Route::get('/', function () {
     return view('beranda');
 })->name('beranda');
@@ -27,13 +30,9 @@ Route::get('/tentang-kami', function () {
 
 //Halaman Kebijakan
 Route::get('/Kebijakan', function () {
-    return view('policy'); 
-});
+    return view('policy'); // <-- sesuai nama file
+})->name('kebijakan');
 
-//Halaman lanjutan info donor
-Route::get('/info-donor-lanjutan', function () {
-    return view('info-donor-lanjutan');
-})->name('info.donor.lanjutan');
 
 // Halaman Pendaftaran
 Route::get('/daftar', function () {
