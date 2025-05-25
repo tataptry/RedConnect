@@ -46,7 +46,7 @@
 
   <!-- Tombol Kembali -->
   <div class="w-full max-w-4xl text-left">
-    <a href="{{ route('beranda') }}" class="text-sm text-red-600 hover:underline">
+    <a href="{{ route('info') }}" class="text-sm text-red-600 hover:underline">
       ← Kembali ke halaman sebelumnya
     </a>
   </div>

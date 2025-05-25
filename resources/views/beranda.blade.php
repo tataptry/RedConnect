@@ -100,19 +100,7 @@
             });
         }
     </script>
-
-    <!-- Tombol Pendaftaran -->
-    <section class="bg-white py-10 px-4 shadow-inner">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Siap Jadi Pahlawan?</h2>
-            <p class="text-gray-600 mb-6">Klik tombol di bawah ini untuk mulai mendaftar sebagai pendonor darah.</p>
-
-            <a href="/daftar" class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition inline-block">
-                Daftar Sebagai Pendonor
-            </a>
-        </div>
-    </section>
-
+    
     <!-- Lokasi Donor -->
     <section class="bg-red-50 py-12 px-4">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

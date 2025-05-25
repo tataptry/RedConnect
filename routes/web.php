@@ -20,7 +20,7 @@ Route::get('/jadwal-donor', function () {
 
 // Halaman Info Donor
 Route::get('/info-donor', function () {
-    return view('info-donor-lanjutan');
+    return view('info');
 })->name('info');
 
 Route::get('/info-donor-lanjutan', function () {
@@ -36,11 +36,3 @@ Route::get('/tentang-kami', function () {
 Route::get('/Kebijakan', function () {
     return view('policy'); // <-- sesuai nama file
 })->name('kebijakan');
-
-
-// Halaman Pendaftaran
-Route::get('/daftar', function () {
-    return view('daftar');
-});
-// Menyimpan Data Pendaftar (contoh)
-
