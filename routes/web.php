@@ -1,14 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PendonorController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-// Halaman Utama
 Route::get('/', function () {
     return view('beranda');
 })->name('beranda');
@@ -29,7 +26,7 @@ Route::get('/tentang-kami', function () {
 });
 
 //Halaman Kebijakan
-Route::get('/Kebijakan', function () {
+Route::get('/kebijakan', function () {
     return view('policy'); 
 });
 
