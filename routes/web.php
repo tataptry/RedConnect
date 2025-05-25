@@ -1,42 +1,21 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PendonorController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-// Halaman Utama
 Route::get('/', function () {
-    return view('beranda');
-})->name('beranda');
-
-//Halaman Jadwal Donor
-Route::get('/jadwal-donor', function () {
-    return view('jadwal');
-})->name('jadwal');
-
-// Halaman Info Donor
-Route::get('/info-donor', function () {
-    return view('info');
-})->name('info');
-
-/// Halaman Tentang Kami
-Route::get('/tentang-kami', function () {
-    return view('about');
+    return view('home');
 });
-
-//Halaman Kebijakan
-Route::get('/kebijakan', function () {
-    return view('policy'); 
+Route::get('/kontak', function () {
+    return view('kontak');
 });
-
-// Halaman Pendaftaran
-Route::get('/daftar', function () {
-    return view('daftar');
+Route::get('/form', function () {
+    return view('form');
 });
-// Menyimpan Data Pendaftar (contoh)
-Route::post('/daftar', [PendonorController::class, 'store'])->name('pendonor.store');
-Route::get('/profil/{id}', [PendonorController::class, 'show'])->name('pendonor.show');
+Route::post('/form-submit', function (Request $request) {
+    // Validasi & simpan (saat ini hanya contoh)
+    return back()->with('success', 'Form berhasil dikirim!');
+})->name('form.submit');
