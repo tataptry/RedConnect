@@ -30,7 +30,7 @@ Route::get('/tentang-kami', function () {
 
 //Halaman Kebijakan
 Route::get('/kebijakan', function () {
-    return view('policy');
+    return view('policy'); 
 });
 
 // Halaman Pendaftaran
