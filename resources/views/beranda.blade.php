@@ -5,10 +5,12 @@
 @section('content')
     <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 py-12 px-6">
     <!-- Bagian Kiri: Gambar -->
-    <div class="md:w-1/2 flex justify-center md:justify-start shadow-md w-48 h-20">
+    <div class="md:w-1/2 flex justify-center md:justify-start">
+    <div class="w-60 md:w-90 h-auto rounded-lg overflow-hidden shadow-lg">
         <img src="{{ asset('assets/img/fix.jpg') }}" alt="Logo Donor Darah Indonesia"
-            class="rounded-lg shadow-md w-48 md:w-64 object-contain" />
+            class="object-cover w-full h-full" />
     </div>
+</div>
 
     <!-- Bagian Kanan: Teks -->
     <div class="md:w-1/2 space-y-3">
