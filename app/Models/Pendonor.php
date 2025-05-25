@@ -9,7 +9,7 @@ class Pendonor extends Model
 {
     use HasFactory;
 
-    protected $table = 'Pendonor';
+    protected $table = 'pendonor';
 
     protected $fillable = [
         'name',
