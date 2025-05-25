@@ -7,9 +7,8 @@ use App\Models\Pendonor;
 
 class PendonorController extends Controller
 {
-     public function store(Request $request)
+    public function store(Request $request)
     {
-        // Validasi data
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -17,10 +16,16 @@ class PendonorController extends Controller
             'phone' => 'required|string|max:20',
         ]);
 
-        // Simpan ke database
-        Pendonor::create($validated);
+        $pendonor = Pendonor::create($validated);
 
-        // Redirect dengan pesan sukses
-        return redirect('/daftar')->with('success', 'Terima kasih telah mendaftar sebagai pendonor!');
+        // Redirect ke halaman profil dengan id pendonor dan kirim pesan sukses
+        return redirect()->route('pendonor.show', $pendonor->id)
+                         ->with('success', 'Terima kasih telah mendaftar sebagai pendonor!');
+    }
+
+    public function show($id)
+    {
+        $pendonor = Pendonor::findOrFail($id);
+        return view('profil', compact('pendonor'));
     }
 }

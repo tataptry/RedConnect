@@ -1,64 +1,68 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daftar Pendonor - RedConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-50 text-red-900 font-sans min-h-screen flex flex-col">
 
-@section('title', 'Daftar Pendonor - RedConnect')
+    <main class="flex-grow max-w-xl mx-auto bg-white rounded-lg shadow-lg p-8 mt-10">
 
-@section('content')
-<section class="bg-white py-16 px-4">
-    <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-red-700 mb-4 text-center">Formulir Pendaftaran Pendonor</h2>
-        <p class="text-gray-700 text-center mb-8">
-            Lengkapi data di bawah ini untuk menjadi bagian dari para pahlawan yang rela membantu sesama.
-        </p>
-        @if (session('success'))
-    <div class="bg-green-100 text-green-700 px-4 py-3 rounded mb-4 text-center">
-        {{ session('success') }}
-    </div>
-@endif
+        <h1 class="text-3xl font-semibold mb-6 border-b-2 border-red-700 pb-2">
+            Form Pendaftaran Pendonor
+        </h1>
 
-        <form action="{{ route('pendonor.store') }}" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-red-50 p-6 rounded-lg shadow">
+        @if ($errors->any())
+            <div class="mb-6 bg-red-100 border border-red-700 text-red-700 px-4 py-3 rounded">
+                <ul class="list-disc pl-5">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+        <form action="{{ route('pendonor.store') }}" method="POST" class="space-y-6">
             @csrf
             <div>
-                <label for="name" class="block font-medium text-gray-700">Nama Lengkap</label>
-                <input type="text" name="name" id="name" class="w-full px-4 py-2 border rounded" required>
+                <label for="name" class="block font-semibold mb-1">Nama Lengkap:</label>
+                <input id="name" name="name" type="text" value="{{ old('name') }}" required
+                       class="w-full border border-red-700 rounded px-3 py-2" />
             </div>
             <div>
-                <label for="email" class="block font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" class="w-full px-4 py-2 border rounded" required>
+                <label for="email" class="block font-semibold mb-1">Email:</label>
+                <input id="email" name="email" type="email" value="{{ old('email') }}" required
+                       class="w-full border border-red-700 rounded px-3 py-2" />
             </div>
             <div>
-                <label for="blood_type" class="block font-medium text-gray-700">Golongan Darah</label>
-                <select name="blood_type" id="blood_type" class="w-full px-4 py-2 border rounded" required>
-                    <option value="">Pilih</option>
-                    <option value="A+">A+</option>
-                    <option value="B+">B+</option>
-                    <option value="AB+">AB+</option>
-                    <option value="O+">O+</option>
-                    <option value="A-">A-</option>
-                    <option value="B-">B-</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O-">O-</option>
+                <label for="blood_type" class="block font-semibold mb-1">Golongan Darah:</label>
+                <select id="blood_type" name="blood_type" required
+                        class="w-full border border-red-700 rounded px-3 py-2">
+                    <option value="">-- Pilih Golongan Darah --</option>
+                    <option value="A+" {{ old('blood_type') == 'A+' ? 'selected' : '' }}>A+</option>
+                    <option value="A-" {{ old('blood_type') == 'A-' ? 'selected' : '' }}>A-</option>
+                    <option value="B+" {{ old('blood_type') == 'B+' ? 'selected' : '' }}>B+</option>
+                    <option value="B-" {{ old('blood_type') == 'B-' ? 'selected' : '' }}>B-</option>
+                    <option value="AB+" {{ old('blood_type') == 'AB+' ? 'selected' : '' }}>AB+</option>
+                    <option value="AB-" {{ old('blood_type') == 'AB-' ? 'selected' : '' }}>AB-</option>
+                    <option value="O+" {{ old('blood_type') == 'O+' ? 'selected' : '' }}>O+</option>
+                    <option value="O-" {{ old('blood_type') == 'O-' ? 'selected' : '' }}>O-</option>
                 </select>
             </div>
             <div>
-                <label for="phone" class="block font-medium text-gray-700">Nomor Telepon</label>
-                <input type="text" name="phone" id="phone" class="w-full px-4 py-2 border rounded" required>
+                <label for="phone" class="block font-semibold mb-1">Nomor Telepon:</label>
+                <input id="phone" name="phone" type="text" value="{{ old('phone') }}" required
+                       class="w-full border border-red-700 rounded px-3 py-2" />
             </div>
-            <div class="md:col-span-2">
-                <button type="submit" class="w-full bg-red-600 text-white py-3 rounded hover:bg-red-700 transition">
-                    Daftar Sekarang
-                </button>
-            </div>
-        </form>
-    </div>
-</section>
-@if ($errors->any())
-    <div class="bg-red-100 text-red-700 p-3 rounded mb-4">
-        <ul class="list-disc pl-4">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
 
-@endsection
+            <button type="submit" class="bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded">
+                Daftar
+            </button>
+        </form>
+
+    </main>
+
+</body>
+</html>
