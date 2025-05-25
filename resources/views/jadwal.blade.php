@@ -18,12 +18,6 @@
         <p class="text-gray-600 mt-6">
             Untuk informasi lokasi kegiatan donor darah mobile, silakan pantau media sosial resmi PMI setempat atau hubungi kami.
         </p>
-
-        <div class="mt-6">
-            <a href="/form" class="inline-block bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition">
-                Daftar Sekarang
-            </a>
-        </div>
     </div>
 </section>
 @endsection
