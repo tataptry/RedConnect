@@ -26,7 +26,7 @@ Route::get('/tentang-kami', function () {
 });
 
 //Halaman Kebijakan
-Route::get('/kebijakan', function () {
+Route::get('/Kebijakan', function () {
     return view('policy'); 
 });
 
