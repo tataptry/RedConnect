@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PendonorController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -37,3 +39,4 @@ Route::get('/daftar', function () {
 });
 // Menyimpan Data Pendaftar (contoh)
 Route::post('/daftar', [PendonorController::class, 'store'])->name('pendonor.store');
+Route::get('/profil/{id}', [PendonorController::class, 'show'])->name('pendonor.show');
