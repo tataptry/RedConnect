@@ -7,25 +7,26 @@ use App\Models\Pendonor;
 
 class PendonorController extends Controller
 {
-    public function store(Request $request)
+    public function daftar(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'blood_type' => 'required|string|max:3',
-            'phone' => 'required|string|max:20',
-        ]);
+        if ($request->isMethod('post')) {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255',
+                'email' => 'required|email|max:255',
+                'blood_type' => 'required|string|max:3',
+                'phone' => 'required|string|max:20',
+            ]);
 
-        $pendonor = Pendonor::create($validated);
+            $pendonor = Pendonor::create($validated);
 
-        // Redirect ke halaman profil dengan id pendonor dan kirim pesan sukses
-        return redirect()->route('pendonor.show', $pendonor->id)
-                         ->with('success', 'Terima kasih telah mendaftar sebagai pendonor!');
-    }
+            // Tampilkan halaman daftar dengan data profil pendonor yang baru saja didaftarkan
+            return view('daftar', [
+                'pendonor' => $pendonor,
+                'success' => 'Terima kasih telah mendaftar sebagai pendonor!',
+            ]);
+        }
 
-    public function show($id)
-    {
-        $pendonor = Pendonor::findOrFail($id);
-        return view('profil', compact('pendonor'));
+        // Jika GET request, tampilkan form kosong
+        return view('daftar');
     }
 }
