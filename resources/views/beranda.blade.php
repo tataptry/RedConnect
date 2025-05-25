@@ -66,11 +66,11 @@
             <div class="relative">
                 <div id="carousel" class="flex overflow-x-auto scroll-smooth gap-6 snap-x snap-mandatory pb-4">
                     @foreach ([
-                        ['name' => 'Ayu Ramadhani', 'info' => 'Pendonor sejak 2018', 'review' => 'Donor darah membuatku merasa lebih sehat dan bermanfaat.', 'img' => '/img/pendonor1.jpg'],
-                        ['name' => 'Budi Santoso', 'info' => 'Pendonor aktif', 'review' => 'Rasanya luar biasa ketika tahu darah kita bisa menyelamatkan nyawa.', 'img' => '/img/pendonor2.jpg'],
-                        ['name' => 'Citra Amelia', 'info' => 'Pendonor pemula', 'review' => 'Awalnya takut, tapi ternyata donor darah sangat nyaman.', 'img' => '/img/pendonor3.jpg'],
-                        ['name' => 'Dewi Kartika', 'info' => 'Donor rutin tiap 3 bulan', 'review' => 'Saya merasa lebih fit setelah rutin mendonor. Ini juga jadi kebiasaan baik.', 'img' => '/img/pendonor4.jpg'],
-                        ['name' => 'Rizky Maulana', 'info' => 'Pendonor sejak kuliah', 'review' => 'Donor darah adalah kontribusi kecil dengan dampak besar bagi sesama.', 'img' => '/img/pendonor5.jpg'],
+                        ['name' => 'Ayu Ramadhani', 'info' => 'Pendonor sejak 2018', 'review' => 'Donor darah membuatku merasa lebih sehat dan bermanfaat.', 'img' => '/assets/img/ava2.png'],
+                        ['name' => 'Budi Santoso', 'info' => 'Pendonor aktif', 'review' => 'Rasanya luar biasa ketika tahu darah kita bisa menyelamatkan nyawa.', 'img' => '/assets/img/ava1.png'],
+                        ['name' => 'Citra Amelia', 'info' => 'Pendonor pemula', 'review' => 'Awalnya takut, tapi ternyata donor darah sangat nyaman.', 'img' => '/assets/img/ava3.png'],
+                        ['name' => 'Dewi Kartika', 'info' => 'Donor rutin tiap 3 bulan', 'review' => 'Saya merasa lebih fit setelah rutin mendonor. Ini juga jadi kebiasaan baik.', 'img' => '/assets/img/ava4.png'],
+                        ['name' => 'Rizky Maulana', 'info' => 'Pendonor sejak kuliah', 'review' => 'Donor darah adalah kontribusi kecil dengan dampak besar bagi sesama.', 'img' => '/assets/img/ava5.png'],
                     ] as $pendonor)
                         <div class="min-w-full md:min-w-[50%] lg:min-w-[33%] bg-white p-6 rounded-xl shadow text-center snap-start">
                             <img src="{{ $pendonor['img'] }}" alt="{{ $pendonor['name'] }}" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
