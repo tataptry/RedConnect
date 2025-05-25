@@ -3,24 +3,25 @@
 @section('title', 'Beranda - RedConnect')
 
 @section('content')
-    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 py-12 px-6">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start  py-12 px-6 gap-8">
     <!-- Bagian Kiri: Gambar -->
-    <div class="md:w-1/2 flex justify-center md:justify-start">
-    <div class="w-60 md:w-90 h-auto rounded-lg overflow-hidden shadow-lg">
-        <img src="{{ asset('assets/img/fix.jpg') }}" alt="Logo Donor Darah Indonesia"
-            class="object-cover w-full h-full" />
-    </div>
+        <div class="md:w-1/2 flex justify-center md:justify-start">
+            <div class="w-40 md:w-60 h-auto rounded-lg overflow-hidden shadow-lg">
+                <img src="{{ asset('assets/img/beranda.jpg') }}" alt="Logo Donor Darah Indonesia"
+                    class="object-cover w-50 h-80" />
+            </div>
+        </div>
+
+   <!-- Bagian Kanan: Teks -->
+<div class="md:w-1/2 space-y-3 pt-6 md:pt-0">
+    <h1 class="text-4xl font-bold text-red-700">Selamat Datang di RedConnect</h1>
+   <p class="text-gray-700 text-lg" style="text-align: justify;">
+
+        RedConnect hadir untuk mempermudah proses donor darah dan meningkatkan kesadaran masyarakat tentang pentingnya donor darah. Bergabunglah dengan kami untuk membantu menyelamatkan nyawa dan menyebarkan kebaikan. Kamu tidak perlu jubah atau kekuatan super untuk jadi pahlawan. Cukup datang ke lokasi donor, dan berikan sedikit waktumu. Darah yang kamu berikan adalah harapan bagi mereka yang tak kamu kenal.
+    </p>
 </div>
 
-    <!-- Bagian Kanan: Teks -->
-    <div class="md:w-1/2 space-y-3">
-        <h1 class="text-4xl font-bold text-red-700">Selamat Datang di RedConnect</h1>
-        <p class="text-gray-700 text-lg leading-relaxed">
-            RedConnect hadir untuk mempermudah proses donor darah dan meningkatkan kesadaran masyarakat tentang pentingnya donor darah.
-            Bergabunglah dengan kami untuk membantu menyelamatkan nyawa dan menyebarkan kebaikan. Kamu tidak perlu jubah atau kekuatan super untuk jadi pahlawan. Cukup datang ke lokasi donor, dan berikan sedikit waktumu. Darah yang kamu berikan adalah harapan bagi mereka yang tak kamu kenal.
-        </p>
     </div>
-</div>
 
 
     <!-- Info Donor & Jadwal Donor -->
