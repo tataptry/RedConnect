@@ -5,12 +5,13 @@
 @section('content')
     <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start  py-12 px-6 gap-8">
     <!-- Bagian Kiri: Gambar -->
-        <div class="md:w-1/2 flex justify-center md:justify-start">
-            <div class="w-40 md:w-60 h-auto rounded-lg overflow-hidden shadow-lg">
-                <img src="{{ asset('assets/img/beranda.jpg') }}" alt="Logo Donor Darah Indonesia"
-                    class="object-cover w-50 h-80" />
-            </div>
-        </div>
+        <div class="md:w-1/2 w-full flex justify-center md:justify-start px-0">
+    <div class="w-full md:w-96 rounded-lg overflow-hidden shadow-lg">
+        <img src="{{ asset('assets/img/beranda.jpg') }}" alt="Logo Donor Darah Indonesia"
+             class="object-cover w-full h-72 md:h-96" />
+    </div>
+</div>
+
 
    <!-- Bagian Kanan: Teks -->
 <div class="md:w-1/2 space-y-3 pt-6 md:pt-0">
@@ -20,9 +21,7 @@
         RedConnect hadir untuk mempermudah proses donor darah dan meningkatkan kesadaran masyarakat tentang pentingnya donor darah. Bergabunglah dengan kami untuk membantu menyelamatkan nyawa dan menyebarkan kebaikan. Kamu tidak perlu jubah atau kekuatan super untuk jadi pahlawan. Cukup datang ke lokasi donor, dan berikan sedikit waktumu. Darah yang kamu berikan adalah harapan bagi mereka yang tak kamu kenal.
     </p>
 </div>
-
     </div>
-
 
     <!-- Info Donor & Jadwal Donor -->
     <section class="max-w-6xl mx-auto px-4 py-8">
