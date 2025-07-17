@@ -7,6 +7,12 @@
             <a href="{{ route('beranda') }}" class="hover:underline">Beranda</a>
             <a href="/tentang-kami" class="hover:underline">Tentang Kami</a>
             <a href="/Kebijakan" class="hover:underline">Kebijakan</a>
+            @guest
+            <a href="{{ route('login') }}"
+             class="bg-white text-red-600 font-semibold px-4 py-2 rounded hover:bg-red-100 transition">
+            Login
+             </a>
+            @endguest
         </nav>
 
         <!-- Tombol Mobile Menu -->
