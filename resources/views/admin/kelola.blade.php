@@ -14,7 +14,7 @@
             <nav class="space-y-2">
                 <a href="{{ url('/admin/dashboard') }}" class="block py-2 px-3 rounded hover:bg-red-600">Dashboard</a>
                 <a href="{{ url('/admin/kelola') }}" class="block py-2 px-3 rounded bg-red-600">Kelola Pendonor</a>
-                <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">Logout</a>
+                <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">Keluar</a>
             </nav>
         </aside>
 

@@ -19,7 +19,7 @@
                 Kelola Pendonor
             </a>
             <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">
-                Logout
+                Keluar
             </a>
         </nav>
     </aside>
