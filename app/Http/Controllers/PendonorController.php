@@ -33,3 +33,14 @@ class PendonorController extends Controller
         return redirect('/')->with('success', 'Data berhasil dikirim!');
     }
 }
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class PendonorController extends Controller
+{
+    //
+}
