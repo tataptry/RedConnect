@@ -13,7 +13,7 @@
         <h2 class="text-2xl font-bold mb-8">RedConnect Admin</h2>
         <nav class="space-y-4 text-sm">
             <a href="{{ url('/admin/dashboard') }}" class="block py-2 px-3 rounded hover:bg-red-600">Dashboard</a>
-            <a href="{{ url('/admin/pendonor') }}" class="block py-2 px-3 rounded hover:bg-red-600">Kelola Pendonor</a>
+            <a href="{{ url('/admin/kelola') }}" class="block py-2 px-3 rounded hover:bg-red-600">Kelola Pendonor</a>
             <a href="{{ url('/admin/jadwal') }}" class="block py-2 px-3 rounded bg-red-800">Kelola Jadwal Donor</a>
             <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">Kembali ke Beranda</a>
         </nav>

@@ -54,7 +54,7 @@ Route::get('/admin/jadwal', function () {
     return view('admin.jadwal');
 })->name('admin.jadwal');
 
-Route::get('/admin/kelola-pendonor', function () {
+Route::get('/admin/kelola', function () {
     return view('admin.kelola');
 })->name('kelola');
 
