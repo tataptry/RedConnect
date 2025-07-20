@@ -58,6 +58,21 @@
         </div>
     </section>
 
+    <!-- daftar donor -->
+    <section class=" px-2 py-3">
+            <div class="bg-white shadow-md rounded-xl p-6 border-l-4 border-red-600 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold text-center text-red-700 mb-10">Donor Sekarang</h2>
+                    <p class="text-gray-700 mb-4">
+                        Donor darah dapat membantu menyelamatkan nyawa hingga tiga orang. Prosesnya cepat, aman, dan bermanfaat tidak hanya bagi penerima tetapi juga pendonor.
+                    </p>
+                </div>
+                <a href="{{ route('info') }}"
+                   class="inline-block mt-auto bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
+                    Kirim
+                </a>
+            </div>
+    </section>
     <!-- Carousel Ulasan -->
     <section class="bg-red-50 py-16 px-4">
         <div class="max-w-6xl mx-auto">
@@ -122,11 +137,7 @@
 
             <!-- Google Maps -->
             <div class="w-full h-80 rounded-lg shadow overflow-hidden">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7720758027684!2d109.335148!3d-0.026635899999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d596cf0e2ab7f%3A0x7f23652b3ddc6b1c!2sPalang%20Merah%20Indonesia%20(PMI)%20Kota%20Pontianak!5e0!3m2!1sen!2sid!4v1716646482557!5m2!1sen!2sid"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8169718958475!2d109.3420606!3d-0.0471062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59fa572cb141%3A0x89ed4076cb0d4441!2sPMI%20Kota%20Pontianak!5e0!3m2!1sid!2sid!4v1753011215458!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
