@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PendonorController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminPendonorController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -33,6 +34,14 @@ Route::get('/tentang-kami', function () {
     return view('about');
 });
 
+// Tampilkan halaman form (jika perlu)
+Route::get('/daftar', function () {
+    return view('daftar'); // ganti dengan nama blade form kamu
+});
+
+// Terima form pendaftaran pendonor
+Route::post('/daftar', [PendonorController::class, 'store'])->name('daftar');
+
 //Halaman Kebijakan
 Route::get('/Kebijakan', function () {
     return view('policy'); // <-- sesuai nama file
@@ -45,11 +54,9 @@ Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
 
-Route::get('/admin/jadwal', function () {
-    return view('admin.jadwal');
-})->name('admin.jadwal');
-
-Route::get('/admin/kelola-pendonor', function () {
+Route::get('/admin/kelola', function () {
     return view('admin.kelola');
 })->name('kelola');
 
+Route::get('/admin/kelola', [AdminPendonorController::class, 'index']);
+Route::delete('/admin/kelola/{id}', [AdminPendonorController::class, 'destroy'])->name('pendonor.destroy');
