@@ -34,7 +34,7 @@ Route::get('/tentang-kami', function () {
 });
 
 // halaman daftar
-route::get('/daftar-akun', function () {
+route::get('/daftar', function () {
     return view('daftar');
 })->name('daftar');
 
