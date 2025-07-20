@@ -15,14 +15,11 @@
             <a href="{{ url('/admin/dashboard') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/dashboard') ? 'bg-red-800' : '' }}">
                 Dashboard
             </a>
-            <a href="{{ url('/admin/pendonor') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/pendonor') ? 'bg-red-800' : '' }}">
+            <a href="{{ url('/admin/kelola') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/kelola') ? 'bg-red-800' : '' }}">
                 Kelola Pendonor
             </a>
-            <a href="{{ url('/admin/jadwal') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/jadwal') ? 'bg-red-800' : '' }}">
-                Kelola Jadwal Donor
-            </a>
             <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">
-                Kembali ke Beranda
+                Logout
             </a>
         </nav>
     </aside>
@@ -35,15 +32,11 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div class="bg-white shadow rounded-lg p-6 border-l-4 border-red-600">
                 <h3 class="text-xl font-semibold text-red-600 mb-2">Total Pendonor</h3>
-                <p class="text-3xl font-bold text-gray-800">128</p>
+                <p class="text-3xl font-bold text-gray-800">50</p>
             </div>
             <div class="bg-white shadow rounded-lg p-6 border-l-4 border-red-600">
                 <h3 class="text-xl font-semibold text-red-600 mb-2">Permintaan Darah</h3>
-                <p class="text-3xl font-bold text-gray-800">42</p>
-            </div>
-            <div class="bg-white shadow rounded-lg p-6 border-l-4 border-red-600">
-                <h3 class="text-xl font-semibold text-red-600 mb-2">Event Donor</h3>
-                <p class="text-3xl font-bold text-gray-800">5</p>
+                <p class="text-3xl font-bold text-gray-800">10</p>
             </div>
         </div>
     </main>

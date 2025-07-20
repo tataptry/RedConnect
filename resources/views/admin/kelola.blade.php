@@ -65,12 +65,11 @@
 </tbody>
                 </table>
             </div>
-
-            <button type="submit"
-                class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
-                Masuk
-            </button>
-        </form>
+            @else
+                <p class="text-gray-600">Belum ada data pendonor.</p>
+            @endif
+        </main>
     </div>
-</div>
-@endsection
+
+</body>
+</html>
