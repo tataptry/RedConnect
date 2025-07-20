@@ -17,15 +17,26 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('lupapw') }}">
+        <form method="POST" action="{{ route('lupapw') }}"><center>
             @csrf
+            <div class="w-center">
+                <img src="{{ asset('assets/img/padlock.png') }}" alt="gembok"
+                class="object-cover h-20 md:h-20" />
+            </div>
 
-            <p class="text-center mt-4">
-                Bermasalah dengan password?
+            <p class="text-center font-semibold mt-4">
+               Reset Your Password
             </p>
+            
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-semibold mb-2"></label>
+                <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    placeholder="masukkan email anda">
+            </div>
 
             <div>
-                <center><button type="submit"
+                <button type="submit"
                     class="w-40 mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
                     Kirim Link Reset 
                 </button></center>
