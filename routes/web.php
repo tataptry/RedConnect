@@ -28,14 +28,6 @@ Route::get('/info-donor-lanjutan', function () {
     return view('info-donor-lanjutan');
 })->name('info.donor.lanjutan');
 
-Route::get('/daftar-akun', function () {
-    return view('daftar');
-})->name('daftar');
-
-Route::get('/lupa-password', function () {
-    return view('lupapw');
-})->name('lupapw');
-
 /// Halaman Tentang Kami
 Route::get('/tentang-kami', function () {
     return view('about');
@@ -48,3 +40,9 @@ Route::get('/Kebijakan', function () {
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+
+

@@ -5,48 +5,25 @@
 @section('content')
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
     <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-md">
-        <h2 class="text-2xl font-bold text-center text-red-600 mb-6">RedConnect</h2>
+        <h2 class="text-2xl font-bold text-center text-red-600 mb-6">Admin RedConnect</h2>
 
-        @if ($errors->any())
-            <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
-                <ul class="list-disc list-inside text-sm">
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
-
+        <form method="GET" action="{{ route('admin.dashboard') }}">
             <div class="mb-4">
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" required
+                <input type="email" id="adminredconnect@gmail.com" required
                     class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 border-gray-300" />
             </div>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                <input type="password" name="password" id="password" required
+                <input type="123456" id="password" required
                     class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 border-gray-300" />
             </div>
 
-            <p class="text-right mt-4">
-            <a href="{{ route('lupapw') }}" class="text-black hover:underline"><u><i>Lupa Password?</i></u></a>
-            </p>
-
-            <div>
-                <br><button type="submit"
-                    class="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
-                    Masuk
-                </button>
-
-            <p class="text-center mt-4">
-            Belum punya akun? <a href="{{ route('daftar') }}" class="text-blue-600 hover:underline"><u>Daftar</u></a>
-            </p>
-
-            </div>
+            <button type="submit"
+                class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
+                Masuk
+            </button>
         </form>
     </div>
 </div>
