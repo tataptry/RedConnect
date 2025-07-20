@@ -20,11 +20,15 @@
         <form method="POST" action="{{ route('lupapw') }}">
             @csrf
 
+            <p class="text-center mt-4">
+                Bermasalah dengan password?
+            </p>
+
             <div>
-                <br><button type="submit"
-                    class="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
-                    Daftar
-                </button>
+                <center><button type="submit"
+                    class="w-40 mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
+                    Kirim Link Reset 
+                </button></center>
 
             </div>
         </form>
