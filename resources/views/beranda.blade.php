@@ -59,10 +59,10 @@
     </section>
 
     <!-- daftar donor -->
-    <section class=" max-w-md mx-auto px-4 py-6">
-            <div class=" shadow-md rounded-xl p-4 bg-red-600 flex flex-col justify-between">
+    <section class=" max-w-md mx-auto p-2">
+            <div class=" shadow-md rounded-xl px-4 py-2 bg-red-600 flex flex-col justify-between">
                 <a href="{{ route('daftar') }}"
-                  class="text-3xl font-bold text-center text-white mb-10mt-auto transition">
+                  class="text-xl font-bold text-center text-white mb-10mt-auto transition">
                       Daftar Sekarang
                 </a>
             </div>
