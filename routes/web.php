@@ -33,6 +33,11 @@ Route::get('/tentang-kami', function () {
     return view('about');
 });
 
+// halaman daftar
+route::get('/daftar-akun', function () {
+    return view('daftar');
+})->name('daftar');
+
 //Halaman Kebijakan
 Route::get('/Kebijakan', function () {
     return view('policy'); // <-- sesuai nama file

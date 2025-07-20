@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Daftar Akun - RedConnect')
+@section('title', 'Daftar - RedConnect')
 
 @section('content')
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
