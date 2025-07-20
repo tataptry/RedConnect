@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Login - RedConnect')
+@section('title', 'Daftar Akun - RedConnect')
 
 @section('content')
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
@@ -17,7 +17,7 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="{{ route('daftar') }}">
             @csrf
 
             <div class="mb-4">
@@ -32,19 +32,11 @@
                     class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 border-gray-300" />
             </div>
 
-            <p class="text-right mt-4">
-            <a href="{{ route('lupapw') }}" class="text-black hover:underline"><u><i>Lupa Password?</i></u></a>
-            </p>
-
             <div>
                 <br><button type="submit"
                     class="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition">
-                    Masuk
+                    Daftar
                 </button>
-
-            <p class="text-center mt-4">
-            Belum punya akun? <a href="{{ route('daftar') }}" class="text-blue-600 hover:underline"><u>Daftar</u></a>
-            </p>
 
             </div>
         </form>

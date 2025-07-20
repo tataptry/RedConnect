@@ -28,6 +28,14 @@ Route::get('/info-donor-lanjutan', function () {
     return view('info-donor-lanjutan');
 })->name('info.donor.lanjutan');
 
+Route::get('/daftar-akun', function () {
+    return view('daftar');
+})->name('daftar');
+
+Route::get('/lupa-password', function () {
+    return view('lupapw');
+})->name('lupapw');
+
 /// Halaman Tentang Kami
 Route::get('/tentang-kami', function () {
     return view('about');
