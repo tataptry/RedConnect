@@ -15,7 +15,7 @@
             <a href="{{ url('/admin/dashboard') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/dashboard') ? 'bg-red-800' : '' }}">
                 Dashboard
             </a>
-            <a href="{{ url('/admin/pendonor') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/pendonor') ? 'bg-red-800' : '' }}">
+            <a href="{{ url('/admin/kelola') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/kelola') ? 'bg-red-800' : '' }}">
                 Kelola Pendonor
             </a>
             <a href="{{ url('/admin/jadwal') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/jadwal') ? 'bg-red-800' : '' }}">
