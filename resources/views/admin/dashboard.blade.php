@@ -6,18 +6,30 @@
     <title>Dashboard Admin - RedConnect</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-gray-100 min-h-screen flex">
 
-    <!-- Header -->
-    <header class="bg-red-600 text-white py-4 shadow">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Admin RedConnect</h1>
-        </div>
-    </header>
+    <!-- Sidebar -->
+    <aside class="w-64 bg-red-700 text-white min-h-screen p-6 shadow-lg">
+        <h2 class="text-2xl font-bold mb-8">RedConnect Admin</h2>
+        <nav class="space-y-4 text-sm">
+            <a href="{{ url('/admin/dashboard') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/dashboard') ? 'bg-red-800' : '' }}">
+                Dashboard
+            </a>
+            <a href="{{ url('/admin/pendonor') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/pendonor') ? 'bg-red-800' : '' }}">
+                Kelola Pendonor
+            </a>
+            <a href="{{ url('/admin/jadwal') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/jadwal') ? 'bg-red-800' : '' }}">
+                Kelola Jadwal Donor
+            </a>
+            <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">
+                Kembali ke Beranda
+            </a>
+        </nav>
+    </aside>
 
     <!-- Main Content -->
-    <main class="py-10 px-4 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-red-700 mb-6">Dashboard Admin</h2>
+    <main class="flex-1 p-8">
+        <h1 class="text-3xl font-bold text-red-700 mb-6">Dashboard Admin</h1>
 
         <!-- Statistik -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -34,35 +46,7 @@
                 <p class="text-3xl font-bold text-gray-800">5</p>
             </div>
         </div>
-
-        <!-- Navigasi -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a href="#" class="block bg-white shadow hover:shadow-lg transition p-6 rounded-lg border border-gray-200">
-                <h4 class="text-lg font-semibold text-red-700 mb-2">Kelola Data Pendonor</h4>
-                <p class="text-gray-600">Lihat dan edit informasi pendonor darah.</p>
-            </a>
-
-            <a href="#" class="block bg-white shadow hover:shadow-lg transition p-6 rounded-lg border border-gray-200">
-                <h4 class="text-lg font-semibold text-red-700 mb-2">Kelola Jadwal Donor</h4>
-                <p class="text-gray-600">Atur dan perbarui jadwal kegiatan donor.</p>
-            </a>
-
-            <a href="#" class="block bg-white shadow hover:shadow-lg transition p-6 rounded-lg border border-gray-200">
-                <h4 class="text-lg font-semibold text-red-700 mb-2">Permintaan Darah</h4>
-                <p class="text-gray-600">Pantau dan proses permintaan darah masuk.</p>
-            </a>
-
-            <a href="/" class="block bg-white shadow hover:shadow-lg transition p-6 rounded-lg border border-gray-200">
-                <h4 class="text-lg font-semibold text-red-700 mb-2">Kembali ke Beranda</h4>
-                <p class="text-gray-600">Keluar dari halaman admin.</p>
-            </a>
-        </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="mt-10 py-4 text-center text-sm text-gray-500">
-        &copy; {{ date('Y') }} RedConnect. All rights reserved.
-    </footer>
 
 </body>
 </html>
