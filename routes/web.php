@@ -60,4 +60,3 @@ Route::get('/admin/kelola', function () {
 
 Route::get('/admin/kelola', [AdminPendonorController::class, 'index']);
 Route::delete('/admin/kelola/{id}', [AdminPendonorController::class, 'destroy'])->name('pendonor.destroy');
-
