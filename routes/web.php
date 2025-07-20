@@ -45,4 +45,11 @@ Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
 
+Route::get('/admin/jadwal', function () {
+    return view('admin.jadwal');
+})->name('admin.jadwal');
+
+Route::get('/admin/kelola-pendonor', function () {
+    return view('admin.kelola');
+})->name('kelola');
 
