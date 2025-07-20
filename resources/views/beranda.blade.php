@@ -59,20 +59,15 @@
     </section>
 
     <!-- daftar donor -->
-    <section class=" px-2 py-3">
-            <div class="bg-white shadow-md rounded-xl p-6 border-l-4 border-red-600 flex flex-col justify-between">
-                <div>
-                    <h2 class="text-3xl font-bold text-center text-red-700 mb-10">Donor Sekarang</h2>
-                    <p class="text-gray-700 mb-4">
-                        Donor darah dapat membantu menyelamatkan nyawa hingga tiga orang. Prosesnya cepat, aman, dan bermanfaat tidak hanya bagi penerima tetapi juga pendonor.
-                    </p>
-                </div>
-                <a href="{{ route('info') }}"
-                   class="inline-block mt-auto bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
-                    Kirim
+    <section class=" max-w-md mx-auto px-4 py-6">
+            <div class=" shadow-md rounded-xl p-4 bg-red-600 flex flex-col justify-between">
+                <a href="{{ route('daftar') }}"
+                  class="text-3xl font-bold text-center text-white mb-10mt-auto transition">
+                      Daftar Sekarang
                 </a>
             </div>
     </section>
+
     <!-- Carousel Ulasan -->
     <section class="bg-red-50 py-16 px-4">
         <div class="max-w-6xl mx-auto">
