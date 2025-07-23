@@ -25,55 +25,5 @@ Tujuan donor darah adalah untuk kepentingan sosial dan kemanusiaan. Prosedur ini
 </a>
 </div>
 
-<!-- Kotak Terpisah: Daftar Pendonor -->
-<div class="bg-gray-50 border-l-4 border-red-400 rounded-xl shadow-inner p-6 mt-6">
-  <h3 class="text-xl font-semibold text-red-600 mb-4">Data Pendonor</h3>
-  
-  <ul class="space-y-4">
-    <!-- Pendonor 1 -->
-    <li class="flex items-center gap-4 bg-white rounded shadow p-3">
-      <img src="/assets/img/ava2.png" alt="Ayu Ramadhani" class="w-14 h-14 rounded-full object-cover shadow" />
-      <div class="flex-1">
-        <div class="font-semibold text-gray-800">Ayu Ramadhani</div>
-        <div class="text-sm text-gray-500">Golongan Darah: A+ | Pendonor sejak 2018</div>
-      </div>
-    </li>
-    
-    <!-- Pendonor 2 -->
-    <li class="flex items-center gap-4 bg-white rounded shadow p-3">
-      <img src="/assets/img/ava1.png" alt="Budi Santoso" class="w-14 h-14 rounded-full object-cover shadow" />
-      <div class="flex-1">
-        <div class="font-semibold text-gray-800">Budi Santoso</div>
-        <div class="text-sm text-gray-500">Golongan Darah: O+ | Pendonor aktif</div>
-      </div>
-    </li>
-    
-    <!-- Pendonor 3 -->
-    <li class="flex items-center gap-4 bg-white rounded shadow p-3">
-      <img src="/assets/img/ava3.png" alt="Citra Amelia" class="w-14 h-14 rounded-full object-cover shadow" />
-      <div class="flex-1">
-        <div class="font-semibold text-gray-800">Citra Amelia</div>
-        <div class="text-sm text-gray-500">Golongan Darah: B+ | Pendonor pemula</div>
-      </div>
-    </li>
-    
-    <!-- Pendonor 4 -->
-    <li class="flex items-center gap-4 bg-white rounded shadow p-3">
-      <img src="/assets/img/ava5.png" alt="Rizky Maulana" class="w-14 h-14 rounded-full object-cover shadow" />
-      <div class="flex-1">
-        <div class="font-semibold text-gray-800">Rizky Maulana</div>
-        <div class="text-sm text-gray-500">Golongan Darah: AB+ | Donor sejak kuliah</div>
-      </div>
-    </li>
-    <!-- Pendonor 5 -->
-    <li class="flex items-center gap-4 bg-white rounded shadow p-3">
-      <img src="/assets/img/ava4.png" alt="Citra Amelia" class="w-14 h-14 rounded-full object-cover shadow" />
-      <div class="flex-1">
-        <div class="font-semibold text-gray-800">Dewi Kartika</div>
-        <div class="text-sm text-gray-500">Golongan Darah: A+ | Pendonor pemula</div>
-      </div>
-    </li>
-  </ul>
-</div>
 
 @endsection

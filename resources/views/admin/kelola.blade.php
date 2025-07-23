@@ -14,7 +14,9 @@
             <nav class="space-y-2">
                 <a href="{{ url('/admin/dashboard') }}" class="block py-2 px-3 rounded hover:bg-red-600">Dashboard</a>
                 <a href="{{ url('/admin/kelola') }}" class="block py-2 px-3 rounded bg-red-600">Kelola Pendonor</a>
-                <a href="{{ url('/') }}" class="block py-2 px-3 rounded hover:bg-red-600">Logout</a>
+                <a href="{{ url('/admin/ulasan') }}" class="block py-2 px-3 rounded hover:bg-red-600 {{ request()->is('admin/ulasan') ? 'bg-red-800' : '' }}">
+                Kelola Ulasan</a>
+               <a href="{{ route('logout') }}" class="block py-2 px-3 rounded hover:bg-red-600">Logout</a>
             </nav>
         </aside>
 
