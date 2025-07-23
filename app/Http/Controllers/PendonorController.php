@@ -32,4 +32,8 @@ class PendonorController extends Controller
 
         return redirect('/')->with('success', 'Data berhasil dikirim!');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 78ea98fa518cf37fc8b250050c0b3a7101afcc5b
